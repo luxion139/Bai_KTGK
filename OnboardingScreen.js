@@ -9,14 +9,14 @@ const OnboardingScreen = () => {
     <View style={styles.container}>
       {/* Hình nền */}
       <Image
-        source={require('./assets/81401.png')} // Thay bằng hình ảnh của bạn
+        source={require('./assets/81401.png')} 
         style={styles.backgroundImage}
       />
 
       {/* Logo */}
       <View style={styles.logoContainer}>
         <Image
-          source={require('./assets/Group.png')} // Thay bằng logo của bạn
+          source={require('./assets/Group.png')} 
           style={styles.logo}
         />
       </View>
@@ -32,7 +32,7 @@ const OnboardingScreen = () => {
       {/* Nút bắt đầu */}
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('SignIn')} // Điều hướng sang màn hình SignIn
+        onPress={() => navigation.navigate('SignIn')} 
       >
         <Text style={styles.buttonText}>Get Started</Text>
       </TouchableOpacity>
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: '62%', // Điều chỉnh vị trí logo
+    top: '62%', 
     justifyContent: 'center',
     alignItems: 'center',
   },
   logo: {
-    width: 50, // Kích thước logo
+    width: 50, 
     height: 50,
     resizeMode: 'contain',
   },
