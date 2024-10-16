@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import CountryPicker from 'react-native-country-picker-modal'; // Dùng để chọn mã quốc gia
-import { FontAwesome } from '@expo/vector-icons'; // Để dùng icon của Google và Facebook
-import { isValidPhoneNumber } from 'libphonenumber-js'; // Dùng để kiểm tra số điện thoại hợp lệ
+import CountryPicker from 'react-native-country-picker-modal'; 
+import { FontAwesome } from '@expo/vector-icons'; 
+import { isValidPhoneNumber } from 'libphonenumber-js'; 
 
 const SignInScreen = () => {
-  const [countryCode, setCountryCode] = useState('VN'); // Mã quốc gia mặc định là Việt Nam (VN)
-  const [callingCode, setCallingCode] = useState('84'); // Mã vùng Việt Nam (84)
-  const [phoneNumber, setPhoneNumber] = useState(''); // Số điện thoại người dùng nhập
+  const [countryCode, setCountryCode] = useState('VN'); 
+  const [callingCode, setCallingCode] = useState('84'); 
+  const [phoneNumber, setPhoneNumber] = useState(''); 
 
   // Hàm kiểm tra tính hợp lệ của số điện thoại
   const handleSignIn = () => {
@@ -23,7 +23,7 @@ const SignInScreen = () => {
     <View style={styles.container}>
       {/* Hình ảnh phía trên */}
       <Image
-        source={require('./assets/6011.png')} // Thay bằng hình ảnh của bạn
+        source={require('./assets/6011.png')} 
         style={styles.image}
       />
 
@@ -34,12 +34,12 @@ const SignInScreen = () => {
       <View style={styles.phoneContainer}>
         {/* Picker mã quốc gia */}
         <CountryPicker
-          countryCode={countryCode} // Mã quốc gia hiện tại
-          withCallingCode // Hiển thị mã gọi quốc gia
-          withFlag // Hiển thị cờ quốc gia
+          countryCode={countryCode} 
+          withCallingCode 
+          withFlag 
           onSelect={(country) => {
-            setCountryCode(country.cca2); // Cập nhật mã quốc gia
-            setCallingCode(country.callingCode[0]); // Cập nhật mã gọi quốc gia
+            setCountryCode(country.cca2); 
+            setCallingCode(country.callingCode[0]); 
           }}
         />
         {/* Hiển thị mã gọi quốc gia */}
