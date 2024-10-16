@@ -2,6 +2,7 @@
 
 - **Họ và tên**: Nguyễn Minh Hiếu
 - **Mã SV**: BIT220059
+- **Lớp** : 22IT3
 
 ## Kết quả chạy chương trình
 
