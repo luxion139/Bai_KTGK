@@ -13,12 +13,12 @@ const App = () => {
         <Stack.Screen 
           name="Onboarding" 
           component={OnboardingScreen} 
-          options={{ headerShown: false }} // Ẩn tiêu đề màn hình Onboarding
+          options={{ headerShown: false }} 
         />
         <Stack.Screen 
           name="SignIn" 
           component={SignInScreen} 
-          options={{ headerShown: false }} // Ẩn tiêu đề và mũi tên quay lại trên SignIn
+          options={{ headerShown: false }} 
         />
       </Stack.Navigator>
     </NavigationContainer>
